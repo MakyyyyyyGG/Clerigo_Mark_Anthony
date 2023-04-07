@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Syne:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -20,16 +22,24 @@ header{
     padding: 10px 10px 10px 10px;
     position: sticky;
     top: 0%;
-    border-bottom: 0.5px solid white;
+    border-bottom: 1px solid white;
     background-color: rgb(37, 37, 37);
     z-index: 1;
 }
 .logo{
     margin-right: auto;
     font-family: 'Syne', sans-serif;
-    font-size: 9px;
-    color: white;
+    font-size: 10px;
+    background: -webkit-linear-gradient(to right, #aba136, #e5d16c); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #aba136, #e5d16c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
+.logo h1{
+    transition: ease-in-out .3s;
+}
+
 nav ul{
     list-style: none;
     display: flex;
@@ -40,7 +50,7 @@ nav ul{
     font-family: 'Syne', sans-serif;
 }
 .link-container{
-    border: solid 0.5px white;
+    border: solid 1px white;
     display: inline;
     position: relative;
     padding: 10px;
@@ -51,14 +61,6 @@ nav ul{
     color: white;
     transition: ease-in-out .3s;
 }
-hr{
-    border: 0;
-    clear: both;
-    display: block;
-    width: 100%;
-    background-color: white;
-    height: 1px;  
-}
 .headline{
     position: relative;
     text-align: center;
@@ -66,23 +68,48 @@ hr{
     padding: 10px 0px 10px 0px;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
-    font-family: 'Syne', sans-serif;
-    color: white;
+    font-family: 'Syne', sans-serif; 
+    background: -webkit-linear-gradient(to right, #aba136, #e5d16c); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #aba136, #e5d16c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
+.headline h1{
+    transition: ease-in-out .3s;
+}
+
 nav #toggle, nav label{
     display: none;
 }
 
 .link-container:hover{
     background-color: white;
-    color: white;
     cursor: pointer;
 }
 .link-container:hover a{
     color: black;
 }
+.logo:hover h1{
+    background: -webkit-linear-gradient(to right, #aba136, #e5d16c); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #aba136, #e5d16c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.headline:hover h1{
+    background: -webkit-linear-gradient(to right, #aba136, #e5d16c); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #aba136, #e5d16c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    cursor: default;
+}
 
 @media(max-width: 1010px){
+    .logo{
+        font-size: 7px;
+    }
     nav .link-container{
         border: none;
         width: 95%;
@@ -105,13 +132,15 @@ nav #toggle, nav label{
         width: 100%;
         margin: 0px 10px;
     }
-    nav label{
+    nav label {
         display: flex;
         margin-right: 5px;
         font-size: 25px;
         justify-content: flex-end;
         cursor: pointer;
-    }
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+    } 
     nav #toggle:checked ~ .menu{
         padding: 20px 0px;
         position: absolute;
@@ -124,7 +153,6 @@ nav #toggle, nav label{
     nav #toggle:checked ~ .menu .link-container{
         font-size: 20px;
     }
-
     .picture img{
         width: 80%;
         margin-top: -50vh;
@@ -133,23 +161,160 @@ nav #toggle, nav label{
 }
 
 /* ------------------------------------------------ END OF NAVBAR -------------------------------------------------- */
-
-
-
 .container {
-    position: absolute;
-    align-items: center;
+    display: flex;
     justify-content: center;
-    display: grid;
-    grid-template-columns: 100px 100px;
-    grid-template-rows: 100px;
+    align-items: center;
+    flex-direction: row;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    height: 350px;
 }
-.item-1{
-    grid-column: 1/1;
+.container h1 {
+    height: 100%;
+    width: 60%;
+    border-right: 1px solid white;
+    font-family: 'Syne', sans-serif;
+    color: white;
+    padding: 10px;
 }
-.item-2{
-    grid-column: 1/2;
+.container img {
+    border: 1px solid white;
+    width: 40%;
+    height: 300px;
+    margin: 20px;
+    box-shadow: 10px 10px rgb(199, 191, 191);
 }
-  
+.details h4{
+    font-family: 'Montserrat', sans-serif;   
+    font-size: 25px;
+    margin-top: 65px;
+}
+.details{
+    height: 100%;
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;   
+    font-size: 10px;
+}
+.socials{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+}
+.socials .btn{
+    font-size: 30px;
+    color: white;
+    background: transparent;
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    transition: .3s ease-in-out;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+/* --------------------------------------------- TABLET VIEW ------------------------------------------- */
+@media(max-width:1033px) and (max-height:650px){
+    .container{
+        border-top: none;
+        margin-top: 340px;
+        flex-wrap: wrap-reverse;
+        height: 320px;
+    }
+    .container img{
+        width: 550px;
+    }
+    .container h1{
+        position: relative;
+        padding: 0px 10px 10px 10px;
+        width: 80%;
+        text-align: center;
+        border: none;
+    }
+    .details{
+        text-align: center;
+    }
+    .socials{
+        justify-content: center;
+    }
+    .details h4{
+        margin-top: 30px
+    }
+}
+/* --------------------------------------------- MOBILE VIEW ------------------------------------------- */
+@media(max-width:725px){
+    .container{
+        margin-top: 340px;
+        height: 275px;
+    }
+    .container h1{
+        font-size: 25px;
+    }
+    .container img{
+        width: 500px;
+    }
+    .details{
+        font-size: 10px;
+    }
+    .details h4{
+        margin-top: 20px;
+        font-size: 25px;
+    }
+}
 
+@media(max-width:595px){
+    .container{
+        margin-top: 290px;
+        height: 240px;
+    }
+    .container h1{
+        font-size: 20px;
+    }
+    .container img{
+        width: 450px;
+        height: 250px;
+    }
+    .details{
+        font-size: 10px;
+    }
+    .details h4{
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    .socials .btn{
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+    }
+}
+@media(max-width:460px){
+    .container{
+        margin-top: 240px;
+        height: 200px;
+    }
+    .container h1{
+        font-size: 15px;
+    }
+    .container img{
+        margin-top: 20px;
+        width: 390px;
+        height: 200px;
+    }
+    .details{
+        font-size:  10px;
+    }
+    .details h4{
+        margin-top: 20px;
+        font-size: 18px;
+    }
+    .socials .btn{
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+    }
+}
 
