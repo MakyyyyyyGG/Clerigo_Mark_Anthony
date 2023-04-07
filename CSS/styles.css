@@ -132,7 +132,7 @@ nav #toggle, nav label{
         width: 100%;
         margin: 0px 10px;
     }
-    nav label {
+    nav .menu-toggle {
         display: flex;
         margin-right: 5px;
         font-size: 25px;
@@ -140,17 +140,33 @@ nav #toggle, nav label{
         cursor: pointer;
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
-    } 
-    nav #toggle:checked ~ .menu{
+    }
+    
+    nav #toggle:checked ~ .menu-toggle .fa-bars {
+        display: none;
+    }
+    
+    nav #toggle:checked ~ .menu-toggle .fa-times {
+        display: block;
+    }
+    
+    nav #toggle:not(:checked) ~ .menu-toggle .fa-bars {
+        display: block;
+    }
+    
+    nav #toggle:not(:checked) ~ .menu-toggle .fa-times {
+        display: none;
+    }
+    nav #toggle:checked ~ .menu {
         padding: 20px 0px;
         position: absolute;
-        margin-top: -25px;
+        margin-top: -24px;
         height: 100vh;
         width: 100%;
         background-color: rgb(23, 23, 23);
         z-index: 1;
     }
-    nav #toggle:checked ~ .menu .link-container{
+    nav #toggle:checked ~ .menu .link-container {
         font-size: 20px;
     }
     .picture img{
