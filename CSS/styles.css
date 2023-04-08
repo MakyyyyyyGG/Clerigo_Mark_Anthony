@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -39,7 +40,6 @@ header{
 .logo h1{
     transition: ease-in-out .3s;
 }
-
 nav ul{
     list-style: none;
     display: flex;
@@ -64,7 +64,7 @@ nav ul{
 .headline{
     position: relative;
     text-align: center;
-    margin: 23px 0px 20px 0px;
+    margin: 20px 0px 20px 0px;
     padding: 10px 0px 10px 0px;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
@@ -169,14 +169,9 @@ nav #toggle, nav label{
     nav #toggle:checked ~ .menu .link-container {
         font-size: 20px;
     }
-    .picture img{
-        width: 80%;
-        margin-top: -50vh;
-        height: 30vh;
-    }
 }
 
-/* ------------------------------------------------ END OF NAVBAR -------------------------------------------------- */
+/* ------------------------------------------------ WELCOME TRAVELER -------------------------------------------------- */
 .container {
     display: flex;
     justify-content: center;
@@ -197,19 +192,20 @@ nav #toggle, nav label{
 .container img {
     border: 1px solid white;
     width: 40%;
-    height: 300px;
-    margin: 20px;
-    box-shadow: 10px 10px rgb(199, 191, 191);
+    height: 313px;
+    margin: 10px 20px 2px 30px;
+    -webkit-animation: shadow-pop-br .5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	animation: shadow-pop-br .5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
 .details h4{
-    font-family: 'Montserrat', sans-serif;   
+    font-family: 'Questrial', sans-serif;
     font-size: 25px;
     margin-top: 65px;
 }
 .details{
     height: 100%;
     text-align: right;
-    font-family: 'Montserrat', sans-serif;   
+    font-family: 'Questrial', sans-serif;
     font-size: 10px;
 }
 .socials{
@@ -233,6 +229,36 @@ nav #toggle, nav label{
     color: black;
     cursor: pointer;
 }
+@-webkit-keyframes shadow-pop-br {
+    0% {
+      -webkit-box-shadow: 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white;
+              box-shadow: 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white;
+      -webkit-transform: translateX(0) translateY(0);
+              transform: translateX(0) translateY(0);
+    }
+    100% {
+      -webkit-box-shadow: 1px 1px white, 2px 2px white, 3px 3px white, 4px 4px white, 5px 5px white, 6px 6px white, 7px 7px white, 8px 8px white;
+              box-shadow: 1px 1px white, 2px 2px white, 3px 3px white, 4px 4px white, 5px 5px white, 6px 6px white, 7px 7px white, 8px 8px white;
+      -webkit-transform: translateX(-8px) translateY(-8px);
+              transform: translateX(-8px) translateY(-8px);
+    }
+  }
+  @keyframes shadow-pop-br {
+    0% {
+      -webkit-box-shadow: 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white;
+              box-shadow: 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white;
+      -webkit-transform: translateX(0) translateY(0);
+              transform: translateX(0) translateY(0);
+    }
+    100% {
+      -webkit-box-shadow: 1px 1px white, 2px 2px white, 3px 3px white, 4px 4px white, 5px 5px white, 6px 6px white, 7px 7px white, 8px 8px white;
+              box-shadow: 1px 1px white, 2px 2px white, 3px 3px white, 4px 4px white, 5px 5px white, 6px 6px white, 7px 7px white, 8px 8px white;
+      -webkit-transform: translateX(-8px) translateY(-8px);
+              transform: translateX(-8px) translateY(-8px);
+    }
+  }
+  
+
 /* --------------------------------------------- TABLET VIEW ------------------------------------------- */
 @media(max-width:1033px){
     .container{
@@ -309,14 +335,14 @@ nav #toggle, nav label{
 }
 @media(max-width:460px){
     .container{
-        margin-top: 240px;
-        height: 200px;
+        margin-top: 237px;
+        height: 197px;
     }
     .container h1{
         font-size: 15px;
     }
     .container img{
-        margin-top: 20px;
+        margin-bottom: 10px;
         width: 390px;
         height: 200px;
     }
@@ -333,4 +359,36 @@ nav #toggle, nav label{
         height: 40px;
     }
 }
+/* ------------------------------------------------ SKILLS -------------------------------------------------- */
+.slide img{
+    margin: auto;
+    margin-top: 10px;
+
+}
+.slider{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+}
+.slider .slide-track{
+    animation: scroll 40s  linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+}
+.slider .slide{
+    width: 250px;
+}
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px * 7));
+    }
+}
+
 
