@@ -483,7 +483,7 @@ nav #toggle, nav label{
 
 @media(max-width: 768px){
     .hero{
-        height: 445px;
+        height: 635px;
         padding:20px 0px 20px 0px;
     }
     .content{
@@ -493,20 +493,31 @@ nav #toggle, nav label{
         height: 200px;
     }
     .btn-box button{
-        font-size: 10px;
+        font-size: 18px;
     }
     .content-left{
-        font-size: 10px;
+        font-size: 15px;
         text-align: center;
         justify-content: center;
         border-right: none;
     }
 }
-@media(max-width: 360px){
+@media(max-width: 460px){
     .hero{
-        height: 390px;
+        height: 445px;
     }
     .btn-box button{
+        font-size: 9px;
+    }
+}
+@media(max-width: 360px){
+    .hero{
+        height: 370px;
+    }
+    .btn-box button{
+        font-size: 7px;
+    }
+    .content-left{
         font-size: 9px;
     }
 }
