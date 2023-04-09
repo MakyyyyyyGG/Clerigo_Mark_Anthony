@@ -82,6 +82,10 @@ nav ul{
 nav #toggle, nav label{
     display: none;
 }
+#home{
+    background-color: white;
+    color: black;
+}
 
 .link-container:hover{
     background-color: white;
@@ -404,7 +408,7 @@ nav #toggle, nav label{
 /* ------------------------------------------------ PROJECTS -------------------------------------------------- */
 
 .hero{
-    height: 412px;
+    height: 405px;
     position: relative;
     overflow: hidden;
 }
@@ -506,14 +510,15 @@ nav #toggle, nav label{
         font-size: 9px;
     }
 }
-@media(max-width: 360px){
+@media(max-width: 397px){
     .hero{
+        height: 365px;
     }
     .btn-box button{
         font-size: 7px;
     }
     .content-left{
-        font-size: 9px;
+        font-size: 12px;
     }
     .play{
         font-size: 12px;
