@@ -97,7 +97,7 @@ nav #toggle, nav label{
     background-clip: text;
     color: transparent;
 }
-.headline:hover h1{
+.headline h1:hover{
     background: -webkit-linear-gradient(to right, #aba136, #e5d16c); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #aba136, #e5d16c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-background-clip: text;
@@ -361,10 +361,9 @@ nav #toggle, nav label{
 }
 /* ------------------------------------------------ SKILLS -------------------------------------------------- */
 .slide img{
-    margin: auto;
     margin: 10px 0px 10px 0px;
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     transition: .3s ease-in-out;
 }
 .slider{
@@ -404,11 +403,8 @@ nav #toggle, nav label{
 /* ------------------------------------------------ PROJECTS -------------------------------------------------- */
 
 .hero{
-    height: 430px;
-    border-top: 1px solid white;
+    height: 433px;
     position: relative;
-    padding: 10px 0px 10px 0px;
-    border-bottom: 1px solid white;
     overflow: hidden;
 }
 .btn-box{
@@ -477,14 +473,13 @@ nav #toggle, nav label{
     color: black;
 }
 .content-right:hover img{
-    transform: scale(1.1);
+    transform: scale(1.03);
     opacity: 1;
 }
 
 @media(max-width: 768px){
     .hero{
-        height: 635px;
-        padding:20px 0px 20px 0px;
+        height: 435px;
     }
     .content{
         flex-direction: column-reverse;
@@ -493,10 +488,10 @@ nav #toggle, nav label{
         height: 200px;
     }
     .btn-box button{
-        font-size: 18px;
+        font-size: 10px;
     }
     .content-left{
-        font-size: 15px;
+        font-size: 13px;
         text-align: center;
         justify-content: center;
         border-right: none;
@@ -512,7 +507,7 @@ nav #toggle, nav label{
 }
 @media(max-width: 360px){
     .hero{
-        height: 370px;
+        height: 342px;
     }
     .btn-box button{
         font-size: 7px;
@@ -520,4 +515,60 @@ nav #toggle, nav label{
     .content-left{
         font-size: 9px;
     }
+    .play{
+        font-size: 12px;
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background-color: transparent;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    font-family: 'Questrial', sans-serif; 
+    padding: 10px;
+    font-size: 10px;
+    background: -webkit-linear-gradient(to right, #aba136, #e5d16c); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #aba136, #e5d16c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+footer h1{
+    transition: .3s ease-in-out;
+}
+footer i{
+    margin-right: 5px;
+    font-size: 15px;
+}
+footer h1:hover{
+    background: -webkit-linear-gradient(to right, #aba136, #e5d16c); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #aba136, #e5d16c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    cursor: default;
+}
+
+@media(max-width: 460px){
+    footer{
+        font-size: 5px;
+    }
+    footer i{
+        font-size: 8px;
+    }
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0)
 }

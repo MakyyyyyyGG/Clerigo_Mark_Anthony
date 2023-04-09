@@ -12,7 +12,7 @@
 </head>
 <body>
 <!------------------------------------------------ NAV------------------------------------------------------------>
-
+<section class="hidden">
     <header>
         <div class="logo">
             <a href="index.html" style="text-decoration: none; color: white;"><h1>THE LINE</h1></a>
@@ -60,9 +60,9 @@
     </h1>
     <img src="Image/Untitled design (4).png" alt="">
 </div>
-
+</section>
 <!------------------------------------------------ SKILLS ------------------------------------------------------------>
-
+<section class="hidden">
 <div class="headline">
     <a href="index.html" style="text-decoration: none; color: white;"><h1>SKILLS</h1></a>
 </div>
@@ -125,9 +125,9 @@
         </div>
     </div>
 </div>
-
+</section>
 <!----------------------------------------------------- PROJECTS ----------------------------------------------->
-
+<section class="hidden">
 <div class="headline">
     <a href="index.html" style="text-decoration: none; color: white;"><h1>PROJECTS</h1></a>
 </div>
@@ -169,7 +169,7 @@
     </div>
     <div class="content" id="content4">
         <div class="content-left">
-            <h1>Commissions</h1>
+            <h1>Commission</h1>
             <button class="play" onclick="window.open('https://drive.google.com/file/d/1vq7ciCAoHqDxBCb9Oi0CUpzj3274wSNS/view')"><i class="fa fa-play"></i> Play Demo</button>
         </div>
         <div class="content-right">
@@ -180,6 +180,12 @@
 
 
 
+<footer>
+    <a href="#" style="text-decoration: none; color: white;"><h1><i class="fa-regular fa-envelope"></i>clerigom7@gmail.com</h1></a> 
+    <a href="#" style="text-decoration: none; color: white;"><h1>BSIT-2B</h1></a>
+    <a href="#" style="text-decoration: none; color: white;"><h1>©Mark Anthony Clerigo</h1></a>
+</footer>
+</section>
 
 
 
@@ -189,10 +195,6 @@
 
 
 
-
-
-
-</body>
 <!--------------------------------------------- NAV  TOGGLE ------------------------------------------------------------->
 <script>
     const menuToggle = document.getElementById("toggle");
@@ -207,8 +209,9 @@
         }
     });
 </script>
+<!-------------------------------------------------------- ICONS ----------------------------------------------------->
 <script src="https://kit.fontawesome.com/d7421a9736.js" crossorigin="anonymous"></script>
-
+<!------------------------------------------------ PROJECTS IN PAGE TABS --------------------------------------------->
 <script>
     var content1 = document.getElementById("content1");
     var content2 = document.getElementById("content2");
@@ -280,4 +283,20 @@
         btn4.style.color = "black";
     }
 </script>
+
+<script>
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            console.log(entry)
+            if(entry.isIntersecting){
+                entry.target.classList.add('show');
+            } else {
+                entry.target.classList.remove('show');
+            }
+        });
+    });
+    const hiddenElements = document.querySelectorAll('.hidden');
+    hiddenElements.forEach((el) => observer.observe (el));
+</script>
+</body>
 </html>
