@@ -483,8 +483,8 @@ nav #toggle, nav label{
 
 @media(max-width: 460px){
     .hero{
-        height: 420px;
-        padding:20px 0px 20px 0px;
+       
+        padding:20px 0px 0px 0px;
     }
     .content{
         flex-direction: column-reverse;
