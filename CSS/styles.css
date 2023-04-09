@@ -502,7 +502,7 @@ nav #toggle, nav label{
         border-right: none;
     }
 }
-@media(max-width: 416px){
+@media(max-width: 410px){
     .hero{
         height: 410px;
     }
