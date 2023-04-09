@@ -362,13 +362,14 @@ nav #toggle, nav label{
 /* ------------------------------------------------ SKILLS -------------------------------------------------- */
 .slide img{
     margin: auto;
-    margin-top: 10px;
-
+    margin: 10px 0px 10px 0px;
+    width: 80px;
+    height: 80px;
+    transition: .3s ease-in-out;
 }
 .slider{
     border-top: 1px solid white;
     border-bottom: 1px solid white;
-    height: 100px;
     margin: auto;
     overflow: hidden;
     position: relative;
@@ -382,6 +383,9 @@ nav #toggle, nav label{
 .slider .slide{
     width: 250px;
 }
+.slide:hover img{
+    transform: scale(1.2);
+}
 @keyframes scroll{
     0%{
         transform: translateX(0);
@@ -390,5 +394,84 @@ nav #toggle, nav label{
         transform: translateX(calc(-250px * 7));
     }
 }
+@media (max-width: 460px){
+    .slide img{
+        height: 50px;
+        width: 50px;
+    }
+}
+
+/* ------------------------------------------------ PROJECTS -------------------------------------------------- */
+
+.hero{
+    height: 450px;
+    border-top: 1px solid white;
+    position: relative;
+    margin-top: 10px;
+    padding: 10px;
+    border-bottom: 1px solid white;
+    overflow: hidden;
+}
+.btn-box{
+    display: flex;    
+}
+.btn-box button{
+    font-size: 16px;
+    color: white;
+    font-family: 'Syne', sans-serif;
+    background: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+    padding: 10px 20px 10px 20px;
+    transition: .3s ease-in-out;
+}
+.btn-box button:hover{
+    background-color: white;
+    color: black;
+}
+.content{
+    justify-content: center;
+    border: 1px solid white;
+    display: flex;
+    position: absolute;
+    transform: translateX(100%);
+}
+.content-left{
+    flex-basis: 725px;
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Syne', sans-serif;
+    color: white;
+    text-align: left;
+}
+.content-right img{
+    border-left: 1px solid white;
+}
+.content-right{
+    flex-basis: 50%;
+}
+#content1{
+    transform: translateX(0px);
+}
+#btn1{
+    background-color: white;
+    color: black;
+}
+.play{
+    font-family: 'Syne', sans-serif;
+    font-size: 17px;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+.play:hover{
+    background-color: white;
+    color: black;
+}
+
+
 
 
