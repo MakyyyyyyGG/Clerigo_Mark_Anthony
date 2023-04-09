@@ -404,11 +404,10 @@ nav #toggle, nav label{
 /* ------------------------------------------------ PROJECTS -------------------------------------------------- */
 
 .hero{
-    height: 450px;
+    height: 435px;
     border-top: 1px solid white;
     position: relative;
-    margin-top: 10px;
-    padding: 10px;
+    padding: 10px 0px 10px 0px;
     border-bottom: 1px solid white;
     overflow: hidden;
 }
@@ -431,13 +430,15 @@ nav #toggle, nav label{
 }
 .content{
     justify-content: center;
-    border: 1px solid white;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
     display: flex;
     position: absolute;
     transform: translateX(100%);
 }
 .content-left{
-    flex-basis: 725px;
+    border-right: 1px solid white;
+    flex-basis: 722px;
     padding: 10px;
     font-size: 18px;
     font-family: 'Syne', sans-serif;
@@ -445,10 +446,13 @@ nav #toggle, nav label{
     text-align: left;
 }
 .content-right img{
-    border-left: 1px solid white;
+    object-fit: cover;
+    transition: .7s;
+    opacity: 0.70;
 }
 .content-right{
     flex-basis: 50%;
+    overflow: hidden;
 }
 #content1{
     transform: translateX(0px);
@@ -458,6 +462,7 @@ nav #toggle, nav label{
     color: black;
 }
 .play{
+    margin-top: 10px;
     font-family: 'Syne', sans-serif;
     font-size: 17px;
     padding: 10px;
@@ -471,7 +476,29 @@ nav #toggle, nav label{
     background-color: white;
     color: black;
 }
+.content-right:hover img{
+    transform: scale(1.1);
+    opacity: 1;
+}
 
-
-
-
+@media(max-width: 460px){
+    .hero{
+        height: 420px;
+        padding:20px 0px 20px 0px;
+    }
+    .content{
+        flex-direction: column-reverse;
+    }
+    .content-right{
+        height: 200px;
+    }
+    .btn-box button{
+        font-size: 10px;
+    }
+    .content-left{
+        font-size: 10px;
+        text-align: center;
+        justify-content: center;
+        border-right: none;
+    }
+}
