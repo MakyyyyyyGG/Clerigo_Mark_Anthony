@@ -182,6 +182,7 @@ nav #toggle, nav label{
     height: 350px;
 }
 .container h1 {
+    font-size: 34px;
     height: 100%;
     width: 60%;
     border-right: 1px solid white;
@@ -403,7 +404,7 @@ nav #toggle, nav label{
 /* ------------------------------------------------ PROJECTS -------------------------------------------------- */
 
 .hero{
-    height: 433px;
+    height: 412px;
     position: relative;
     overflow: hidden;
 }
@@ -442,6 +443,7 @@ nav #toggle, nav label{
     text-align: left;
 }
 .content-right img{
+    border: 1px solid white;
     object-fit: cover;
     transition: .7s;
     opacity: 0.70;
@@ -458,7 +460,7 @@ nav #toggle, nav label{
     color: black;
 }
 .play{
-    margin-top:10px;
+    margin: 10px 0px 10px 0px;
     font-family: 'Syne', sans-serif;
     font-size: 17px;
     padding: 10px;
@@ -479,7 +481,6 @@ nav #toggle, nav label{
 
 @media(max-width: 768px){
     .hero{
-        height: 435px;
     }
     .content{
         flex-direction: column-reverse;
@@ -491,15 +492,15 @@ nav #toggle, nav label{
         font-size: 10px;
     }
     .content-left{
+        flex-basis: 0px;
         font-size: 13px;
         text-align: center;
         justify-content: center;
         border-right: none;
     }
 }
-@media(max-width: 460px){
+@media(max-width: 419px){
     .hero{
-        height: 445px;
     }
     .btn-box button{
         font-size: 9px;
@@ -507,7 +508,6 @@ nav #toggle, nav label{
 }
 @media(max-width: 360px){
     .hero{
-        height: 342px;
     }
     .btn-box button{
         font-size: 7px;
@@ -552,12 +552,12 @@ footer h1:hover{
     cursor: default;
 }
 
-@media(max-width: 460px){
+@media(max-width: 419px){
     footer{
-        font-size: 5px;
+        font-size: 8px;
     }
     footer i{
-        font-size: 8px;
+        font-size: 13px;
     }
 }
 
