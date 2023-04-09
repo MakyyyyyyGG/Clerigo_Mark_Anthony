@@ -502,9 +502,9 @@ nav #toggle, nav label{
         border-right: none;
     }
 }
-@media(max-width: 373px){
+@media(max-width: 360px){
     .hero{
-        height: 395px;
+        height: 390px;
     }
     .btn-box button{
         font-size: 9px;
