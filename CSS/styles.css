@@ -288,7 +288,7 @@ nav #toggle, nav label{
     }
 }
 /* --------------------------------------------- MOBILE VIEW ------------------------------------------- */
-@media(max-width:725px){
+@media(max-width:768px){
     .container{
         margin-top: 340px;
         height: 275px;
@@ -333,7 +333,7 @@ nav #toggle, nav label{
         height: 40px;
     }
 }
-@media(max-width:460px){
+@media(max-width:480px){
     .container{
         margin-top: 237px;
         height: 197px;
@@ -394,7 +394,7 @@ nav #toggle, nav label{
         transform: translateX(calc(-250px * 7));
     }
 }
-@media (max-width: 460px){
+@media (max-width: 768px){
     .slide img{
         height: 50px;
         width: 50px;
@@ -404,7 +404,7 @@ nav #toggle, nav label{
 /* ------------------------------------------------ PROJECTS -------------------------------------------------- */
 
 .hero{
-    height: 435px;
+    height: 430px;
     border-top: 1px solid white;
     position: relative;
     padding: 10px 0px 10px 0px;
@@ -462,7 +462,7 @@ nav #toggle, nav label{
     color: black;
 }
 .play{
-    margin-top: 10px;
+    margin-top:10px;
     font-family: 'Syne', sans-serif;
     font-size: 17px;
     padding: 10px;
@@ -481,10 +481,10 @@ nav #toggle, nav label{
     opacity: 1;
 }
 
-@media(max-width: 460px){
+@media(max-width: 768px){
     .hero{
-       
-        padding:20px 0px 0px 0px;
+        height: 445px;
+        padding:20px 0px 20px 0px;
     }
     .content{
         flex-direction: column-reverse;
