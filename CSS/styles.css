@@ -171,7 +171,7 @@ nav #toggle, nav label{
         z-index: 1;
     }
     nav #toggle:checked ~ .menu .link-container {
-        font-size: 20px;
+        font-size: 15px;
     }
 }
 
@@ -408,9 +408,10 @@ nav #toggle, nav label{
 /* ------------------------------------------------ PROJECTS -------------------------------------------------- */
 
 .hero{
-    height: 63vh;
+    height: 410px;
     position: relative;
     overflow: hidden;
+    border-bottom: 1px solid white;
 }
 .btn-box{
     display: flex;    
@@ -432,7 +433,6 @@ nav #toggle, nav label{
 .content{
     justify-content: center;
     border-top: 1px solid white;
-    border-bottom: 1px solid white;
     display: flex;
     position: absolute;
     transform: translateX(100%);
@@ -507,7 +507,7 @@ nav #toggle, nav label{
     }
 }
 /*----------------- PHONE SPECIFIC MEDIA QUERY ------------------------*/
-@media(max-width: 419px){
+@media(max-width: 425px){
     .hero{
         height: 379px;
     }
@@ -554,7 +554,7 @@ footer h1:hover{
     cursor: default;
 }
 
-@media(max-width: 419px){
+@media(max-width: 425px){
     footer{
         font-size: 7px;
     }
