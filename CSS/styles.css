@@ -408,7 +408,7 @@ nav #toggle, nav label{
 /* ------------------------------------------------ PROJECTS -------------------------------------------------- */
 
 .hero{
-    height: 405px;
+    height: 63vh;
     position: relative;
     overflow: hidden;
 }
@@ -507,9 +507,9 @@ nav #toggle, nav label{
     }
 }
 /*----------------- PHONE SPECIFIC MEDIA QUERY ------------------------*/
-@media(max-width: 419px){
+@media(max-width: 400px){
     .hero{
-        height: 379px;
+        height: 369px;
     }
     .btn-box button{
         font-size: 8px;
