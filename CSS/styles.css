@@ -507,12 +507,12 @@ nav #toggle, nav label{
     }
 }
 /*----------------- PHONE SPECIFIC MEDIA QUERY ------------------------*/
-@media(max-width: 360px){
+@media(max-width: 419px){
     .hero{
-        height: 340px;
+        height: 379px;
     }
     .btn-box button{
-        font-size: 7px;
+        font-size: 8px;
     }
     .content-left{
         font-size: 12px;
@@ -556,10 +556,10 @@ footer h1:hover{
 
 @media(max-width: 419px){
     footer{
-        font-size: 8px;
+        font-size: 7px;
     }
     footer i{
-        font-size: 13px;
+        font-size: 10px;
     }
 }
 
