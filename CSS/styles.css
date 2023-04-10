@@ -507,9 +507,9 @@ nav #toggle, nav label{
     }
 }
 /*----------------- PHONE SPECIFIC MEDIA QUERY ------------------------*/
-@media(max-width: 400px){
+@media(max-width: 419px){
     .hero{
-        height: 369px;
+        height: 379px;
     }
     .btn-box button{
         font-size: 8px;
