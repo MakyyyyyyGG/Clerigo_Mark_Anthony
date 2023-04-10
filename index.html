@@ -142,38 +142,54 @@
     <div class="content" id="content1">
         <div class="content-left">
             <h1>HCI Final Project</h1>
-            <button class="play" onclick="window.open('https://drive.google.com/file/d/1eDpxwRKI-aB5x3N1i28RslYT3sSy76aL/view?usp=share_link')"><i class="fa fa-play"></i> Play Demo</button>
+            <button id="playBtn1" onclick="toggleVideo('myVideo1', 'playBtn1')">Play Demo</button>
+            <!-- <button class="play" onclick="window.open('https://drive.google.com/file/d/1eDpxwRKI-aB5x3N1i28RslYT3sSy76aL/view?usp=share_link')"><i class="fa fa-play"></i> Play Demo</button> -->
         </div>
         <div class="content-right">
-            <img src="Image/Screenshot (12).png" alt="" height="auto" width="100%">
+            <video id="myVideo1" width="100%" height="auto" controls poster="Image/Screenshot (12).png">
+                <source src="video/HTML.mkv" type="video/mp4">
+            </video>
+            <!-- <img src="Image/Screenshot (12).png" alt="" height="auto" width="100%"> -->
         </div>
         
     </div>
     <div class="content" id="content2">
         <div class="content-left">
             <h1>DSA Final Project</h1>
-            <button class="play" onclick="window.open('https://drive.google.com/file/d/1HeVtHNt5--XiNamoV1LNiaXGzBAqDVvv/view?usp=share_link')"><i class="fa fa-play"></i> Play Demo</button>
+            <button id="playBtn2" onclick="toggleVideo('myVideo2', 'playBtn2')">Play Demo</button>
+            <!-- <button class="play" onclick="window.open('https://drive.google.com/file/d/1HeVtHNt5--XiNamoV1LNiaXGzBAqDVvv/view?usp=share_link')"><i class="fa fa-play"></i> Play Demo</button> -->
         </div>
         <div class="content-right">
-            <img src="Image/Screenshot (15).png" alt="" height="auto" width="100%">
+            <video id="myVideo2" width="100%" height="auto" controls poster="Image/Screenshot (15).png">
+                <source src="video/C.mkv" type="video/mp4">
+            </video>
+            <!-- <img src="Image/Screenshot (15).png" alt="" height="auto" width="100%"> -->
         </div>
     </div>
     <div class="content" id="content3">
         <div class="content-left">
             <h1>OOP Midterm Project</h1>
-            <button class="play" onclick="window.open('https://drive.google.com/file/d/1jD3K5AmE9HfSMkaRtfj9mKqwsNR_Aj7z/view?usp=share_link')"><i class="fa fa-play"></i> Play Demo</button>
+            <button id="playBtn3" onclick="toggleVideo('myVideo3', 'playBtn3')">Play Demo</button>
+            <!-- <button class="play" onclick="window.open('https://drive.google.com/file/d/1jD3K5AmE9HfSMkaRtfj9mKqwsNR_Aj7z/view?usp=share_link')"><i class="fa fa-play"></i> Play Demo</button> -->
         </div>
         <div class="content-right">
-            <img src="Image/Screenshot (14).png" alt="" height="auto" width="100%">
+            <video id="myVideo3" width="100%" height="auto" controls poster="Image/Screenshot (14).png">
+                <source src="video/JAVA.mkv" type="video/mp4">
+            </video>
+            <!-- <img src="Image/Screenshot (14).png" alt="" height="auto" width="100%"> -->
         </div>
     </div>
     <div class="content" id="content4">
         <div class="content-left">
             <h1>Commission</h1>
-            <button class="play" onclick="window.open('https://drive.google.com/file/d/1vq7ciCAoHqDxBCb9Oi0CUpzj3274wSNS/view')"><i class="fa fa-play"></i> Play Demo</button>
+            <button id="playBtn4" onclick="toggleVideo('myVideo4', 'playBtn4')">Play Demo</button>
+            <!--  <button class="play" onclick="window.open('https://drive.google.com/file/d/1vq7ciCAoHqDxBCb9Oi0CUpzj3274wSNS/view')"><i class="fa fa-play"></i> Play Demo</button> -->
         </div>
         <div class="content-right">
-            <img src="Image/Screenshot (16).png" alt="" height="auto" width="100%">
+            <video id="myVideo4" width="100%" height="auto" controls poster="Image/Screenshot (16).png" muted>
+                <source src="video/2022-12-20 00-46-26.mkv" type="video/mp4">
+            </video>
+            <!--  <img src="Image/Screenshot (16).png" alt="" height="auto" width="100%"> -->
         </div>
     </div>
 </div>
@@ -297,6 +313,24 @@
     });
     const hiddenElements = document.querySelectorAll('.hidden');
     hiddenElements.forEach((el) => observer.observe (el));
+</script>
+
+<script>
+    
+    function toggleVideo(videoId, buttonId) {
+			var video = document.getElementById(videoId);
+			var playBtn = document.getElementById(buttonId);
+			
+			if (video.paused) {
+				video.play();
+				playBtn.innerHTML = 'Pause Video';
+				video.classList.add("playing");
+			} else {
+				video.pause();
+				playBtn.innerHTML = 'Play Video';
+				video.classList.remove("playing");
+			}
+		}
 </script>
 </body>
 </html>
