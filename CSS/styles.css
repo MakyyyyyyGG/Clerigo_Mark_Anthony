@@ -484,8 +484,6 @@ nav #toggle, nav label{
 }
 
 @media(max-width: 768px){
-    .hero{
-    }
     .content{
         flex-direction: column-reverse;
     }
@@ -503,16 +501,15 @@ nav #toggle, nav label{
         border-right: none;
     }
 }
-@media(max-width: 419px){
-    .hero{
-    }
+@media(max-width: 480px){
     .btn-box button{
         font-size: 9px;
     }
 }
-@media(max-width: 397px){
+/*----------------- PHONE SPECIFIC MEDIA QUERY ------------------------*/
+@media(max-width: 350px){
     .hero{
-        height: 365px;
+        height: 340px;
     }
     .btn-box button{
         font-size: 7px;
