@@ -401,8 +401,8 @@ nav #toggle, nav label{
 }
 @media (max-width: 768px){
     .slide img{
-        height: 50px;
-        width: 50px;
+        height: 60px;
+        width: 60px;
     }
 }
 
