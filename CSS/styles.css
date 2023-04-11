@@ -564,16 +564,23 @@ footer h1:hover{
     }
 }
 
+/*----------------------------------------------- SCROLL ANIAMTION ------------------------------------------------*/
 .hidden{
     opacity: 0;
+    transform: translateY(-10%);
     filter: blur(5px);
-    transform: translateX(-100%);
     transition: all 1s;
 }
 .show{
     opacity: 1;
     filter: blur(0);
-    transform: translateX(0)
+    transform: translateY(0)
+}
+
+@media(prefers-reduced-motion){
+    .hidden{
+        transition:none;
+    }
 }
 
 /* <!------------------------------------------------ EDUCATION ------------------------------------------------------------>*/
@@ -644,6 +651,9 @@ footer h1:hover{
         margin: 20px auto 35px auto;
         width: 150px;
         height: 150px;
+    }
+    .card-list{
+        padding: 2rem 2rem 2rem 2rem;
     }
 
 }
