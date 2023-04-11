@@ -587,7 +587,7 @@ footer h1:hover{
 
 .card-list{
     display: flex;
-    padding: 3rem 3rem 3rem 4rem;
+    padding: 2rem 3rem 2rem 4rem;
     overflow: scroll;
 }
 .card{
