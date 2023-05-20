@@ -184,12 +184,12 @@ nav #toggle, nav label{
     flex-direction: row;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
-    height: 350px;
+    height: 70vh;
 }
-.container h1 {
+.name_details_container{
     font-size: 34px;
     height: 100%;
-    width: 60%;
+    width: 50%;
     border-right: 1px solid white;
     font-family: 'Syne', sans-serif;
     color: white;
@@ -197,14 +197,18 @@ nav #toggle, nav label{
 }
 .container img {
     border: 1px solid white;
-    width: 40%;
-    height: 313px;
     margin: 10px 20px 2px 30px;
     -webkit-animation: shadow-pop-br .5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 	animation: shadow-pop-br .5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    object-fit: cover;
 }
-.container img{
+.img_container{
     animation-delay: 1s;
+    width: 50%;
+    height: 90%;
+}
+.img_container img{
+    width: 100%;
 }
 .details h4{
     font-family: 'Questrial', sans-serif;
@@ -212,6 +216,7 @@ nav #toggle, nav label{
     margin-top: 65px;
 }
 .details{
+    width: 100%;
     height: 100%;
     text-align: right;
     font-family: 'Questrial', sans-serif;
@@ -411,10 +416,8 @@ nav #toggle, nav label{
 
 /* ------------------------------------------------ PROJECTS -------------------------------------------------- */
 
-.hero{
-    height: 410px;
+/* .hero{
     position: relative;
-    overflow: hidden;
     border-bottom: 1px solid white;
 }
 .btn-box{
@@ -443,7 +446,7 @@ nav #toggle, nav label{
 }
 .content-left{
     border-right: 1px solid white;
-    flex-basis: 722px;
+    width: 50%;
     padding: 10px;
     font-size: 18px;
     font-family: 'Syne', sans-serif;
@@ -451,13 +454,14 @@ nav #toggle, nav label{
     text-align: left;
 }
 .content-right img{
+    object-fit: cover;
     border: 1px solid white;
     object-fit: cover;
     transition: .7s;
     opacity: 0.70;
 }
 .content-right{
-    flex-basis: 50%;
+    width: 50%;
     overflow: hidden;
 }
 #content1{
@@ -509,9 +513,9 @@ nav #toggle, nav label{
     .btn-box button{
         font-size: 9px;
     }
-}
+} */
 /*----------------- PHONE SPECIFIC MEDIA QUERY ------------------------*/
-@media(max-width: 425px){
+/* @media(max-width: 425px){
     .hero{
         height: 379px;
     }
@@ -524,48 +528,8 @@ nav #toggle, nav label{
     #playBtn1, #playBtn2, #playBtn3, #playBtn4{
         font-size: 12px;
     }
-}
+} */
 
-footer{
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    background-color: transparent;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    font-family: 'Questrial', sans-serif; 
-    padding: 10px;
-    font-size: 10px;
-    background: -webkit-linear-gradient(to right, #aba136, #e5d16c); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #aba136, #e5d16c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-}
-footer h1{
-    transition: .3s ease-in-out;
-}
-footer i{
-    margin-right: 5px;
-    font-size: 15px;
-}
-footer h1:hover{
-    background: -webkit-linear-gradient(to right, #aba136, #e5d16c); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #aba136, #e5d16c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    cursor: default;
-}
-
-@media(max-width: 425px){
-    footer{
-        font-size: 7px;
-    }
-    footer i{
-        font-size: 10px;
-    }
-}
 
 /*----------------------------------------------- SCROLL ANIAMTION ------------------------------------------------*/
 .hidden{
@@ -589,6 +553,7 @@ footer h1:hover{
 /* <!------------------------------------------------ EDUCATION ------------------------------------------------------------>*/
 
 .card-list{
+    justify-content: center;
     display: flex;
     padding: 2rem 3rem 2rem 4rem;
     overflow: scroll;
@@ -599,7 +564,6 @@ footer h1:hover{
     display: flex;
     position: relative;
     flex-direction: column;
-    height: 350px;
     width: 400px;
     min-width: 240px;
     padding: 1.5rem;
@@ -657,4 +621,44 @@ footer h1:hover{
         padding: 2rem 2rem 2rem 2rem;
     }
 
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background-color: transparent;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    font-family: 'Questrial', sans-serif; 
+    padding: 10px;
+    font-size: 10px;
+    background: -webkit-linear-gradient(to right, #aba136, #e5d16c); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #aba136, #e5d16c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+footer h1{
+    transition: .3s ease-in-out;
+}
+footer i{
+    margin-right: 5px;
+    font-size: 15px;
+}
+footer h1:hover{
+    background: -webkit-linear-gradient(to right, #aba136, #e5d16c); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #aba136, #e5d16c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    cursor: default;
+}
+
+@media(max-width: 425px){
+    footer{
+        font-size: 7px;
+    }
+    footer i{
+        font-size: 10px;
+    }
 }
