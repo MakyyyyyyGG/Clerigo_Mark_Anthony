@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="website icon" type="png" href="Image/Border.png">
-    <link rel="stylesheet" href="css/styles2.css">
+    <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Document</title>
 
 </head>
+
 <body>
     <!------------------------------------------------ NAV------------------------------------------------------------>
-    
-        
-        <header>
-		<div class="container">
-			<h2>The Line</h2>
+
+
+    <header>
+        <div class="container">
+            <h2>The Line</h2>
             <div class="navbar">
                 <nav>
                     <ul>
@@ -26,28 +29,28 @@
                                 Home
                             </a>
                         </li>
-    
+
                         <li>
                             <a href="about.html" class="nav-icon">
                                 <i class="uil uil-user"></i>
                                 About
                             </a>
                         </li>
-    
+
                         <li>
                             <a href="skills.html" class="nav-icon">
                                 <i class="uil uil-file-alt"></i>
                                 Skills
                             </a>
                         </li>
-    
+
                         <li>
                             <a href="portfolio.html" class="nav-icon">
                                 <i class="uil uil-mountains-sun"></i>
                                 Portfolio
                             </a>
                         </li>
-    
+
                         <li>
                             <a href="contactus.html" class="nav-icon">
                                 <i class="uil uil-message"></i>
@@ -56,22 +59,103 @@
                         </li>
                     </ul>
                 </nav>
-			<button class="hamburger">
-				<div class="bar"></div>
-			</button>
-		</div>
-	</header>
-	<nav class="mobile-nav">
-		<a href="index.html">Home</a>
-		<a href="about.html">About</a>
-		<a href="skills.html">Skills</a>
+                <button class="hamburger">
+                    <div class="bar"></div>
+                </button>
+            </div>
+    </header>
+    <nav class="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
         <a href="portfolio.html">Portfolio</a>
-		<a href="contactus.html">ContactUs</a>
-	</nav>
+        <a href="contactus.html">ContactUs</a>
+    </nav>
+
+    <!------------------------------------------------------------------------------------------------------>
+    <section>
+        <div class="container2" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
+            <div class="box" id="box1">
+                <img src="Image/bgbg.png" alt="">
+            </div>
+            <div class="box" id="box2">
+                <div class="details">
+                    <h1>ABOUT ME</h1>
+                    <p>Hey there! I'm Mark Anthony Clerigo, a passionate programmer and technology enthusiast. I reside
+                        in the beautiful town of Tiwi, Albay. Programming has always been a source of excitement and
+                        fascination for me. The ability to create something out of nothing, to bring ideas to life
+                        through lines of code, is truly captivating.
+                        I find joy in exploring the vast world of technologies and staying up-to-date with the latest
+                        trends. From web development to software engineering, I enjoy diving into various aspects of
+                        programming. The ever-evolving nature of technology keeps me on my toes, constantly learning and
+                        growing.
+                        Beyond the digital realm, I embrace the simple pleasures of life. Exploring nature, spending
+                        quality time with loved ones, and indulging in good books are some of the things that bring me
+                        joy. It's all about finding balance and appreciating the little moments that make life
+                        meaningful.
+                        In a nutshell, I'm Mark Anthony Clerigo, a programmer with a deep love for technology, residing
+                        in the captivating town of Tiwi, Albay. I'm dedicated to honing my skills, pushing boundaries,
+                        and making a positive impact through my work.
+                    </p>
+                </div>
+                <div class="details" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
+                    <h1>EDUCATION</h1>
+                    <div class="education">
+                        <div class="card-list">
+                            <div class="card" id="card1">
+                                <div class="card-header">
+                                    <span>
+                                        <h2>Elementary</h2>
+                                        <h4>Libtong Elementary School</h4>
+                                    </span>
+                                    <img src="Image/309002624_456943103134627_2123881317600632339_n.jpg" alt=""
+                                    height="" width="80%">
+                                    <h4 id="year">2010-2015</h4>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <span>
+                                    <h2>Highschool</h2>
+                                    <h4>TAIS</h4></span>
+                                    <img src="Image/tais.jpg" alt="" height="" width="80%">
+                                    <h4 id="year">2015-2019</h4>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <span>
+                                    <h2>Senior Highschool</h2>
+                                    <h4>TAIS SHS</h4></span>
+                                    <img src="Image/tais.jpg" alt="" height="" width="80%">
+                                    <h4 id="year">2019-2021</h4>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <span>
+                                    <h2>College</h2>
+                                    <h4>Bicol University</h4></span>
+                                    <img src="Image/bu2.png" alt="" height="" width="80%">
+                                    <h4 id="year">2021</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <h1>SKILLS</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-    
 
 </body>
 <script src="JS/index2.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </html>
