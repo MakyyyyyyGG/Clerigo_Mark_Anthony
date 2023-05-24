@@ -315,7 +315,7 @@ section {
     display: flex;
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 768px) {
     .details{
         display: block;
     }
@@ -342,11 +342,11 @@ section {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 70vh;
         width: 100%;
         margin-bottom: 20px;
     }
     .details h5{
+        text-align: justify;
         font-size: 15px;
     }
     .role_container{
