@@ -459,6 +459,15 @@ section {
 .slider .slide{
     width: 100%;
 }
+.slider .slide {
+    transition: opacity 0.3s ease-in-out;
+    opacity: .5; /* Set initial opacity for all slides */
+  }
+.slider .slide:hover{
+    opacity: 1;
+}
+  
+
 .slide:hover img{
     transform: scale(1.2);
 }
@@ -478,13 +487,15 @@ section {
     }
 }
 
+/*-----------------------------------------FOOTER----------------------------------------------------*/
+
 footer{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 footer a{
-    margin-block: 20px;
+    margin-block: 10px;
     border: 2px solid #353535;
     background-color: #262626;
     border-radius: 16px;
@@ -502,7 +513,8 @@ footer a{
     font-size: 1.1em;
 }
 footer a:hover{
-    width: 300px;
+    cursor: default;
+    width: 450px;
 }
 footer a::before{
     content: "\f11c";
@@ -529,6 +541,17 @@ footer a span{
     white-space: nowrap;
     transition: 0.5s;
     transform: translate(-30px);
+}
+footer a span i{
+    opacity: .5;
+    font-size: 17px;
+    transition: .3s ease-in-out;
+    margin-left: 10px;
+}
+footer a span i:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+    opacity: 1;
 }
 a:hover span{
     visibility: visible;

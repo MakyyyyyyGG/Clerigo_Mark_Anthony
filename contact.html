@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="website icon" type="png" href="Image/Border.png">
-    <link rel="stylesheet" href="CSS/styles2.css">
+    <link rel="stylesheet" href="CSS/contact.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/c40d7b47b3.js" crossorigin="anonymous"></script>
-    <title>Homepage</title>
-
+    <title>Contact</title>
 </head>
-
 <body>
-    <!------------------------------------------------ NAV------------------------------------------------------------>
-    <header>
+       <!------------------------------------------------ NAV------------------------------------------------------------>
+       <header>
         <div class="container ">
             <h2>The Line</h2>
             <div class="navbar">
@@ -62,55 +59,40 @@
         <a href="contactus.html">Contact</a>
     </nav>
 
-    <!------------------------------------------------ WELCOME ------------------------------------------------------------>
     <section>
-        <div class="container2" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
+        <div class="container4">
             <div class="box" id="box1">
-                <img src="Image/1.png" alt="">
+                <img src="Image/3.png" alt="">
             </div>
             <div class="box" id="box2">
-                <div class="details">
-                    <h1>Mark Anthony Clerigo</h1>
-                    <p>I'm an innovative product designer. With 8 years of experience, I've worked with varieties of
-                        clients and industries, from fashion and beauty to electronics and automotive. I focus on
-                        attention to detail, aesthetic appeal, and practical functionality, making them both visually
-                        stunning and user-friendly.</p>
-                    <div class="socials">
-                        <div class="logo">
-                            <div onclick=" window.open('https://github.com/MakyyyyyyGG')">
-                                <img src="Image/github.png" alt="">
-                                <p>Github</p>
-                            </div>
-                        </div>
-                        <div class="logo">
-                            <div onclick="window.open('https://www.facebook.com/Markyyyyyy.Clerigo/')">
-                                <img src="Image/facebook.png" alt="">
-                                <p>Facebook</p>
-                            </div>
-                        </div>
-                        <div class="logo">
-                            <div onclick="window.open('https://www.instagram.com/markyyyyyy_gg/')">
-                                <img src="Image/instagram.png" alt="">
-                                <p>Instagram</p>
-                            </div>
-                        </div>
-                        <div class="logo">
-                            <div onclick=" window.open('https://twitter.com/AnthonyClerigo')">
-                                <img src="Image/twitter.png" alt="">
-                                <p>Twitter</p>
-                            </div>
-                        </div>
+                <h1>Let's get in touch</h1>
+                    <form action="https://formspree.io/f/xpzeerav"method="POST">
+                        <input type="text" placeholder="Name" name="Name:">
+                        <input type="email" placeholder="Email" name="Email:">
+                        <textarea id="" cols="" rows="10" placeholder="Message" name="Message:"></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                <div class="socials">
+                    <div class="socials_container" onclick=" window.open('https://github.com/MakyyyyyyGG')">
+                        <i class="fa fa-github"></i>
+                        <p>Github</p>
+                    </div>
+                    <div class="socials_container" onclick="window.open('https://www.facebook.com/Markyyyyyy.Clerigo/')">
+                        <i class="fa fa-facebook"></i>
+                        <p>Facebook</p>
+                    </div>
+                    <div class="socials_container" onclick="window.open('https://www.instagram.com/markyyyyyy_gg/')">
+                        <i class="fa fa-instagram"></i>
+                        <p>Instagram</p>
+                    </div>
+                    <div class="socials_container" onclick=" window.open('https://twitter.com/AnthonyClerigo')">
+                        <i class="fa fa-twitter"></i>
+                        <p>Twitter</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-
-
-
-
-
 
     <div id="additional-container">
         <span>Hold Me</span><br>
@@ -126,13 +108,12 @@
             </span>
         </a>
     </footer>
-<script src="JS/index2.js"></script>
+
+    <script src="JS/index2.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
     AOS.init();
 </script>
 </body>
-
-
 
 </html>

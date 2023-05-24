@@ -31,3 +31,7 @@ const slideWidth = slideTrack.querySelector(".slide").offsetWidth;
 
 // Set the width of the slide track to accommodate all slides
 slideTrack.style.width = slideWidth * slideTrack.childElementCount + "px";
+
+
+
+

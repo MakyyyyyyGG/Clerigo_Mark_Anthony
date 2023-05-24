@@ -263,7 +263,7 @@ section {
 }
 .container3 h1{
     font-family: 'Syne', sans-serif;
-    font-size: 70px;
+    font-size: 50px;
 }
 #workss{
     border-bottom: 2px solid #353535;
@@ -383,7 +383,8 @@ footer a{
     font-size: 1.1em;
 }
 footer a:hover{
-    width: 300px;
+    cursor: default;
+    width: 450px;
 }
 footer a::before{
     content: "\f11c";
@@ -410,6 +411,17 @@ footer a span{
     white-space: nowrap;
     transition: 0.5s;
     transform: translate(-30px);
+}
+footer a span i{
+    opacity: .5;
+    font-size: 17px;
+    transition: .3s ease-in-out;
+    margin-left: 10px;
+}
+footer a span i:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+    opacity: 1;
 }
 a:hover span{
     visibility: visible;
