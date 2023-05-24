@@ -311,9 +311,6 @@ section {
 .details .right{
     color: #b9b9b9;
 }
-.details h5{
-    margin-block: 10px;
-}
 .role{
     display: flex;
 }
@@ -321,6 +318,9 @@ section {
 @media (max-width: 1020px) {
     .details{
         display: block;
+    }
+    .container3 .box h1{
+        font-size: 50px;
     }
     .left {
         width: 20%;
@@ -330,16 +330,89 @@ section {
         padding: 20px;
     }
     .container3 h1{
+        margin-block: 30px;
         font-size: 30px;
     }
     .box img, video{
         padding: 20px;
         width: 100%;
-        height: 20vh;
-        padding: 0px;
+        height: 230px;
     }
     .box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 70vh;
         width: 100%;
         margin-bottom: 20px;
     }
+    .details h5{
+        font-size: 15px;
+    }
+    .role_container{
+        margin-block: 20px;
+    }
+    .left, .right{
+        margin-block: 10px;
+    }
+}
+
+/*-----------------------------------------FOOTER----------------------------------------------------*/
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer a{
+    margin-block: 20px;
+    border: 2px solid #353535;
+    background-color: #262626;
+    border-radius: 16px;
+    position: relative;
+    color: white;
+    width: 60px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    overflow: hidden;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    font-size: 1.1em;
+}
+footer a:hover{
+    width: 300px;
+}
+footer a::before{
+    content: "\f11c";
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    font-size: 20px;
+    left: 18px;
+}
+footer a:hover::before{
+    left: 18px;
+}
+footer::after{
+    transform: translate(-50px, 50px);
+}
+footer a:hover::after{
+    transform: translate(50px, -50px);
+}
+footer a span{
+    font-family: 'Syne', sans-serif;
+    font-size: 15px;
+    color: #b9b9b9;
+    visibility: hidden;
+    opacity: 0;
+    white-space: nowrap;
+    transition: 0.5s;
+    transform: translate(-30px);
+}
+a:hover span{
+    visibility: visible;
+    opacity: 1;
+    transform: translate(10px);
 }

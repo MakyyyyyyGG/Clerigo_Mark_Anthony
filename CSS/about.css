@@ -472,8 +472,9 @@ section {
 }
 @media (max-width: 768px){
     .slide img{
-        height: 60px;
-        width: 60px;
+        height: 150px;
+        width: 150px;
+        margin: 0px 30px;
     }
 }
 
