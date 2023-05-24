@@ -271,7 +271,6 @@ section {
 
 .container2 .box {
     width: 100%;
-    height: 90vh;
     position: relative;
 }
 
@@ -318,6 +317,8 @@ section {
 }
 
 .box .details p {
+    text-align: justify;
+    margin-block: 20px;
     color: #b9b9b9;
 }
 
