@@ -248,6 +248,7 @@ section {
     border: 2px solid #353535;
     background-color: #262626;
     margin-inline: 20px;
+    margin-bottom: 20px;
     border-radius: 24px;
     position: relative;
     color: white;
@@ -458,4 +459,34 @@ a:hover span{
     visibility: visible;
     opacity: 1;
     transform: translate(10px);
+}
+
+/*----------------------------------- Hold Me -------------------------------*/
+
+#additional-container {
+    color: #b9b9b9;
+    font-size: 13px;
+    display: none; /* Hide the additional container by default */
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    #additional-container {
+        display: block; /* Show the additional container when the max width is 768px or less */
+    }
+}
+.fa-chevron-down {
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
