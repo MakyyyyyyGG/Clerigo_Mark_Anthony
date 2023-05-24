@@ -236,8 +236,11 @@ nav ul li a:active {
     background: #ffffff;
     color: black;
 }
-
-/*------------------------------------Navrbar-----------------------------------------*/
+#about{
+    background-color: white;
+    color: black;
+}
+/*------------------------------------End of Navrbar-----------------------------------------*/
 
 section {
     border: 1px solid #353535;
@@ -247,8 +250,6 @@ section {
     border-radius: 24px;
     position: relative;
     color: white;
-    /*     height: 90vh;
- */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -275,7 +276,6 @@ section {
 
 #box2 {
     width: 100%;
-    padding-bottom: 50px;
     border-radius: 24px;
 }
 
@@ -285,7 +285,6 @@ section {
 
 #box1 img {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     border-radius: 24px;
     height: 100%;
     width: 100%;
@@ -339,6 +338,7 @@ section {
     }
 }
 
+
 /*----------------------------------EDUCATION-----------------------*/
 .card-list {
     display: flex;
@@ -347,7 +347,8 @@ section {
 }
 
 .card {
-    height: 75vh;
+    border-radius: 24px;
+    height: 60vh;
     font-family: 'Syne', sans-serif;
     display: flex;
     justify-content: center;
@@ -355,9 +356,8 @@ section {
     width: 100%;
     min-width: 240px;
     padding: 1.5rem;
-    background: #161616;
+    background-color: #353535;
     box-shadow: -1rem 0 1rem #1d1c1c;
-    border: 2px solid #353535;
     transition: .3s;
 }
 
@@ -428,4 +428,109 @@ section {
     .card-list {
         padding: 2rem 2rem 2rem 2rem;
     }
+}
+
+
+/* --------------------------------------SKILLS------------------------------------------*/
+
+.slide img{
+    margin: 0PX 100PX;
+    width: 200px;
+    height: 200px;
+    transition: .3s ease-in-out;
+}
+.slider{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    background-color: #353535;
+    height: 400px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+}
+.slider .slide-track{
+    animation: scroll 30s  linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+}
+.slider .slide{
+    width: 100%;
+}
+.slide:hover img{
+    transform: scale(1.2);
+}
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px * 7));
+    }
+}
+@media (max-width: 768px){
+    .slide img{
+        height: 60px;
+        width: 60px;
+    }
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer a{
+    margin-block: 20px;
+    border: 2px solid #353535;
+    background-color: #262626;
+    border-radius: 16px;
+    position: relative;
+    color: white;
+    width: 60px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    overflow: hidden;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    font-size: 1.1em;
+}
+footer a:hover{
+    width: 300px;
+}
+footer a::before{
+    content: "\f11c";
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    font-size: 20px;
+    left: 18px;
+}
+footer a:hover::before{
+    left: 18px;
+}
+footer::after{
+    transform: translate(-50px, 50px);
+}
+footer a:hover::after{
+    transform: translate(50px, -50px);
+}
+footer a span{
+    font-family: 'Syne', sans-serif;
+    font-size: 15px;
+    color: #b9b9b9;
+    visibility: hidden;
+    opacity: 0;
+    white-space: nowrap;
+    transition: 0.5s;
+    transform: translate(-30px);
+}
+a:hover span{
+    visibility: visible;
+    opacity: 1;
+    transform: translate(10px);
 }

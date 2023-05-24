@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="website icon" type="png" href="Image/Border.png">
     <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/c40d7b47b3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Document</title>
 
@@ -16,61 +16,52 @@
 <body>
     <!------------------------------------------------ NAV------------------------------------------------------------>
 
-
     <header>
-        <div class="container">
-            <h2>The Line</h2>
+		<div class="container ">
+			<h2>The Line</h2>
             <div class="navbar">
                 <nav>
                     <ul>
                         <li>
-                            <a href="index.html" class="nav-icon">
+                            <a href="index.html" class="nav-icon" id="home">
                                 <i class="uil uil-estate"></i>
                                 Home
                             </a>
                         </li>
-
+    
                         <li>
-                            <a href="about.html" class="nav-icon">
+                            <a href="about.html" class="nav-icon" id="about">
                                 <i class="uil uil-user"></i>
                                 About
                             </a>
                         </li>
-
+    
                         <li>
-                            <a href="skills.html" class="nav-icon">
-                                <i class="uil uil-file-alt"></i>
-                                Skills
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="portfolio.html" class="nav-icon">
+                            <a href="works.html" class="nav-icon" id="works">
                                 <i class="uil uil-mountains-sun"></i>
-                                Portfolio
+                                Works
                             </a>
                         </li>
-
-                        <li>
-                            <a href="contactus.html" class="nav-icon">
+    
+                        <li id="">
+                            <a href="contactus.html" class="nav-icon" id="contact">
                                 <i class="uil uil-message"></i>
                                 ContactUs
                             </a>
                         </li>
                     </ul>
                 </nav>
-                <button class="hamburger">
-                    <div class="bar"></div>
-                </button>
-            </div>
-    </header>
-    <nav class="mobile-nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="skills.html">Skills</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contactus.html">ContactUs</a>
-    </nav>
+			<button class="hamburger">
+				<div class="bar"></div>
+			</button>
+		</div>
+	</header>
+	<nav class="mobile-nav">
+		<a href="index.html">Home</a>
+		<a href="about.html">About</a>
+        <a href="works.html">Portfolio</a>
+		<a href="contactus.html">ContactUs</a>
+	</nav>
 
     <!------------------------------------------------------------------------------------------------------>
     <section>
@@ -142,15 +133,44 @@
                             </div>
                         </div>
                     </div>
-                    <div class="skills">
+                    <div class="skills" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
                         <h1>SKILLS</h1>
+                        <div class="slider">
+                            <div class="slide-track">
+                                <div class="slide">
+                                    <img src="Image/html.png" alt="">
+                                </div>
+                                <div class="slide">
+                                    <img src="Image/css-3.png" alt="">
+                                </div>
+                                <div class="slide">
+                                    <img src="Image/java-script.png" alt="">
+                                </div>
+                                <div class="slide">
+                                    <img src="Image/C (2).png" alt="">
+                                </div>
+                                <div class="slide">
+                                    <img src="Image/icons8-wordpress-512 (1).png" alt="">
+                                </div>
+                                <div class="slide">
+                                    <img src="Image/C (1).png" alt="">
+                                </div>
+                                <div class="slide">
+                                    <img src="Image/node.png" alt="">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-
+    <footer>
+        <a href="https://www.facebook.com/Markyyyyyy.Clerigo/" target="_blank">
+            <span>Mark Anthony Clerigo</span>
+        </a>
+    </footer>
 
 </body>
 <script src="JS/index2.js"></script>

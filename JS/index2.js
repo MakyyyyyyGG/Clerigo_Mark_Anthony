@@ -16,3 +16,18 @@
                 mobile_menu.classList.toggle('is-active');
             });
         }
+
+
+//SKILLS || Makes the images in the slider infinite
+
+// Get the slide track element
+const slideTrack = document.querySelector(".slide-track");
+
+// Duplicate the slides to create an infinite loop
+slideTrack.innerHTML += slideTrack.innerHTML;
+
+// Calculate the width of a single slide
+const slideWidth = slideTrack.querySelector(".slide").offsetWidth;
+
+// Set the width of the slide track to accommodate all slides
+slideTrack.style.width = slideWidth * slideTrack.childElementCount + "px";

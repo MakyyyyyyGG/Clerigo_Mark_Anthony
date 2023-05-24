@@ -237,6 +237,10 @@ nav ul li a:active {
     color: black;
 }
 
+#home{
+    background-color: white;
+    color: black;
+}
 /*----------------------------------------------------------------------------*/
 
 
@@ -393,6 +397,10 @@ section {
         text-align: justify;
     }
 }
+
+
+
+/* --------------------------------------------------SKILLS---------------------------------------- */
 
 footer{
     display: flex;
