@@ -490,7 +490,7 @@ section {
 /*-----------------------------------------FOOTER----------------------------------------------------*/
 
 footer{
-    padding: 20px;
+    padding-inline:20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -535,7 +535,7 @@ footer a:hover::after{
 }
 footer a span{
     font-family: 'Syne', sans-serif;
-    font-size: 10px;
+    font-size: 15px;
     color: #b9b9b9;
     visibility: hidden;
     opacity: 0;
@@ -545,7 +545,7 @@ footer a span{
 }
 footer a span i{
     opacity: .5;
-    font-size: 13px;
+    font-size: 15px;
     transition: .3s ease-in-out;
     margin-left: 10px;
 }
@@ -572,6 +572,12 @@ a:hover span{
 @media (max-width: 768px) {
     #additional-container {
         display: block; /* Show the additional container when the max width is 768px or less */
+    }
+    footer a span{
+        font-size: 10px;
+    }
+    footer a span i{
+        font-size: 13px;
     }
 }
 .fa-chevron-down {
