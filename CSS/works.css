@@ -360,6 +360,7 @@ section {
 /*-----------------------------------------FOOTER----------------------------------------------------*/
 
 footer{
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -404,7 +405,7 @@ footer a:hover::after{
 }
 footer a span{
     font-family: 'Syne', sans-serif;
-    font-size: 15px;
+    font-size: 10px;
     color: #b9b9b9;
     visibility: hidden;
     opacity: 0;
@@ -414,7 +415,7 @@ footer a span{
 }
 footer a span i{
     opacity: .5;
-    font-size: 17px;
+    font-size: 13px;
     transition: .3s ease-in-out;
     margin-left: 10px;
 }
