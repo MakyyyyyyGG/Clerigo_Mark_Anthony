@@ -110,7 +110,7 @@ header {
     min-height: 100vh;
     display: block;
     z-index: 98;
-    background-color: #12002F;
+    background-color: #161616;
     padding-top: 120px;
     -webkit-transition: 0.4s;
     transition: 0.4s;
@@ -127,7 +127,7 @@ header {
     margin: 0 auto 16px;
     text-align: center;
     padding: 12px 16px;
-    background-color: #1f103F;
+    background-color: #353535;
     color: #FFF;
     text-decoration: none;
 }
