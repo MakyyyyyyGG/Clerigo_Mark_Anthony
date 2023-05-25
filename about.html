@@ -51,7 +51,8 @@
                         </li>
 
                         <li id="">
-                            <a href="contact.html" class="nav-icon" id="signout">
+                            <a href="login.php" class="nav-icon" id="signout"
+                                onclick="return confirm('Are you sure you want to logout?');">
                                 <i class="uil uil-message"></i>
                                 Sign out
                             </a>
@@ -67,11 +68,10 @@
         <a href="index.html">Home</a>
         <a href="works.html">Works</a>
         <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="#">Sign out</a>
+        <a href="login.php" class="nav-icon" id="signout"
+            onclick="return confirm('Are you sure you want to logout?');">Sign out</a>
     </nav>
-
-    <!------------------------------------------------------------------------------------------------------>
+    <!------------------------------------------ Content ------------------------------------------------------------>
     <section>
         <div class="container2" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
             <div class="box" id="box1">
@@ -177,7 +177,8 @@
         </div>
     </section>
 
-
+    <!------------------------------------------ FOOTER ------------------------------------------------------------>
+    
     <div id="additional-container">
         <span>Tap Me</span><br>
         <span><i class="fa-sharp fa-solid fa-chevron-down"></i></span>
@@ -193,11 +194,11 @@
         </a>
     </footer>
 
-<script src="JS/index2.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
+    <script src="JS/index2.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 

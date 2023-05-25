@@ -43,14 +43,15 @@
                         </li>
 
                         <li id="">
-                            <a href="contactus.html" class="nav-icon" id="contact">
+                            <a href="contact.html" class="nav-icon" id="contact">
                                 <i class="uil uil-message"></i>
                                 Contact
                             </a>
                         </li>
 
                         <li id="">
-                            <a href="contact.html" class="nav-icon" id="signout">
+                            <a href="login.php" class="nav-icon" id="signout"
+                                onclick="return confirm('Are you sure you want to logout?');">
                                 <i class="uil uil-message"></i>
                                 Sign out
                             </a>
@@ -66,11 +67,11 @@
         <a href="index.html">Home</a>
         <a href="works.html">Works</a>
         <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="#">Sign out</a>
+        <a href="login.php" class="nav-icon" id="signout"
+            onclick="return confirm('Are you sure you want to logout?');">Sign out</a>
     </nav>
 
-    <!------------------------------------------------------------------------------------------------------>
+    <!----------------------------------------------- CONTENT ------------------------------------------------------->
 
     <section>
         <div class="container3">
@@ -80,8 +81,7 @@
                 <video src="video/JAVA.mkv" controls poster="Image/calculator.png"></video>
                 <div class="details">
                     <h1>IT-108</h1>
-                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur veniam officia
-                        doloribus quod eveniet quis tempore molestias error expedita.</h5>
+                    <h5>This is our finals activity in OOP. It is a calculator with an special feature. The special feature that I've added is the computation of Salary.</h5>
                     <div class="role_container">
                         <div class="role">
                             <div class="left">
@@ -115,8 +115,7 @@
                 <video src="video/HTML.mkv" controls poster="Image/hci.png"></video>
                 <div class="details">
                     <h1>IT-110</h1>
-                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur veniam officia
-                        doloribus quod eveniet quis tempore molestias error expedita.</h5>
+                    <h5>This is our finals activty in HCI. It's a website that follows Shneiderman's eight golden rules of interface design.</h5>
                     <div class="role_container">
                         <div class="role">
                             <div class="left">
@@ -150,8 +149,7 @@
                 <video src="video/C.mkv" controls poster="Image/c.png"></video>
                 <div class="details">
                     <h1>IT-104</h1>
-                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur veniam officia
-                        doloribus quod eveniet quis tempore molestias error expedita.</h5>
+                    <h5>This is our finals activity in DSA, it is a program that has multiple features. The features were mostly the topics we've discussed in DSA.</h5>
                     <div class="role_container">
                         <div class="role">
                             <div class="left">
@@ -185,8 +183,7 @@
                 <video src="video/chat.mkv" controls poster="Image/networking.png"></video>
                 <div class="details">
                     <h1>IT-114</h1>
-                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur veniam officia
-                        doloribus quod eveniet quis tempore molestias error expedita.</h5>
+                    <h5>This is our Networking-1 finals activity. It is a real-time chat application with Node.JS, EJS, and Socket.io. I was responsible for everything.</h5>
                     <div class="role_container">
                         <div class="role">
                             <div class="left">
@@ -220,8 +217,7 @@
                 <video src="video/vote.mkv" controls poster="Image/vote.png"></video>
                 <div class="details">
                     <h1>IT-114</h1>
-                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur veniam officia
-                        doloribus quod eveniet quis tempore molestias error expedita.</h5>
+                    <h5>This is just our activity in Networking-1. It is a real time voting website that does not require the page to refresh in order to change the vote counter.</h5>
                     <div class="role_container">
                         <div class="role">
                             <div class="left">
@@ -255,8 +251,7 @@
                 <video src="video/wordpress.mkv" controls poster="Image/wp.png"></video>
                 <div class="details">
                     <h1>WP</h1>
-                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur veniam officia
-                        doloribus quod eveniet quis tempore molestias error expedita.</h5>
+                    <h5>This is a commission project. It is for a friend of mine that I've made for his Finals activity</h5>
                     <div class="role_container">
                         <div class="role">
                             <div class="left">
@@ -287,6 +282,7 @@
             </div>
     </section>
 
+    <!------------------------------------------ FOOTER ------------------------------------------------------------>
 
     <div id="additional-container">
         <span>Tap Me</span><br>
@@ -302,7 +298,6 @@
             </span>
         </a>
     </footer>
-
 
 
     <script src="JS/index2.js"></script>

@@ -43,14 +43,15 @@
                         </li>
 
                         <li id="">
-                            <a href="contactus.html" class="nav-icon" id="contact">
+                            <a href="contact.html" class="nav-icon" id="contact">
                                 <i class="uil uil-message"></i>
                                 Contact
                             </a>
                         </li>
 
                         <li id="">
-                            <a href="contact.html" class="nav-icon" id="signout">
+                            <a href="login.php" class="nav-icon" id="signout"
+                                onclick="return confirm('Are you sure you want to logout?');">
                                 <i class="uil uil-message"></i>
                                 Sign out
                             </a>
@@ -66,11 +67,11 @@
         <a href="index.html">Home</a>
         <a href="works.html">Works</a>
         <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="#">Sign out</a>
+        <a href="login.php" class="nav-icon" id="signout"
+            onclick="return confirm('Are you sure you want to logout?');">Sign out</a>
     </nav>
 
-    <!------------------------------------------------ WELCOME ------------------------------------------------------------>
+    <!------------------------------------------------ CONTENT ------------------------------------------------------------>
     <section>
         <div class="container2" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
             <div class="box" id="box1">
@@ -79,10 +80,7 @@
             <div class="box" id="box2">
                 <div class="details">
                     <h1>Mark Anthony Clerigo</h1>
-                    <p>I'm an innovative product designer. With 8 years of experience, I've worked with varieties of
-                        clients and industries, from fashion and beauty to electronics and automotive. I focus on
-                        attention to detail, aesthetic appeal, and practical functionality, making them both visually
-                        stunning and user-friendly.</p>
+                    <p>With 2 years of experience as an innovative web developer, I create visually stunning and user-friendly websites for a diverse range of industries. By combining attention to detail, aesthetic appeal, and practical functionality, I translate product designs into captivating online experiences. Let's collaborate and transform your ideas into cutting-edge websites that captivate and inspire.</p>
                     <div class="socials">
                         <div class="logo">
                             <div onclick=" window.open('https://github.com/MakyyyyyyGG')">
@@ -114,11 +112,7 @@
         </div>
     </section>
 
-
-
-
-
-
+    <!------------------------------------------ FOOTER ------------------------------------------------------------>
 
     <div id="additional-container">
         <span>Tap Me</span><br>
@@ -134,11 +128,11 @@
             </span>
         </a>
     </footer>
-<script src="JS/index2.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
+    <script src="JS/index2.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,9 +11,10 @@
     <script src="https://kit.fontawesome.com/c40d7b47b3.js" crossorigin="anonymous"></script>
     <title>Contact</title>
 </head>
+
 <body>
-       <!------------------------------------------------ NAV------------------------------------------------------------>
-       <header>
+    <!------------------------------------------------ NAV------------------------------------------------------------>
+    <header>
         <div class="container ">
             <h2>The Line</h2>
             <div class="navbar">
@@ -47,7 +49,8 @@
                         </li>
 
                         <li id="">
-                            <a href="contact.html" class="nav-icon" id="signout">
+                            <a href="login.php" class="nav-icon" id="signout"
+                                onclick="return confirm('Are you sure you want to logout?');">
                                 <i class="uil uil-message"></i>
                                 Sign out
                             </a>
@@ -63,29 +66,32 @@
         <a href="index.html">Home</a>
         <a href="works.html">Works</a>
         <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="#">Sign out</a>
+        <a href="login.php" class="nav-icon" id="signout"
+            onclick="return confirm('Are you sure you want to logout?');">Sign out</a>
     </nav>
+    
+    <!------------------------------------------ Content ------------------------------------------------------------>
 
     <section>
-        <div class="container4">
+        <div class="container4" class="box" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
             <div class="box" id="box1">
-                <img src="Image/3.png" alt="">
+                <img src="Image/5.png" alt="">
             </div>
             <div class="box" id="box2">
                 <h1>Let's get in touch</h1>
-                    <form action="https://formspree.io/f/xpzeerav"method="POST">
-                        <input type="text" placeholder="Name" name="Name:" required>
-                        <input type="email" placeholder="Email" name="Email:" required>
-                        <textarea id="" cols="" rows="10" placeholder="Message" name="Message:"></textarea>
-                        <button type="submit">Send Message</button>
-                    </form>
+                <form action="https://formspree.io/f/xpzeerav" method="POST">
+                    <input type="text" placeholder="Name" name="Name:" required>
+                    <input type="email" placeholder="Email" name="Email:" required>
+                    <textarea id="" cols="" rows="10" placeholder="Message" name="Message:"></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
                 <div class="socials">
                     <div class="socials_container" onclick=" window.open('https://github.com/MakyyyyyyGG')">
                         <i class="fa fa-github"></i>
                         <p>Github</p>
                     </div>
-                    <div class="socials_container" onclick="window.open('https://www.facebook.com/Markyyyyyy.Clerigo/')">
+                    <div class="socials_container"
+                        onclick="window.open('https://www.facebook.com/Markyyyyyy.Clerigo/')">
                         <i class="fa fa-facebook"></i>
                         <p>Facebook</p>
                     </div>
@@ -101,6 +107,8 @@
             </div>
         </div>
     </section>
+
+    <!------------------------------------------ FOOTER ------------------------------------------------------------>
 
     <div id="additional-container">
         <span>Tap Me</span><br>
@@ -118,10 +126,10 @@
     </footer>
 
     <script src="JS/index2.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

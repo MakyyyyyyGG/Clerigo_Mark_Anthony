@@ -315,7 +315,7 @@ section {
     display: flex;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .details{
         display: block;
     }
@@ -464,4 +464,4 @@ a:hover span{
     100% {
         transform: translateY(0);
     }
-}
+}   
